@@ -9,6 +9,7 @@ BUILD:
 ------
 
 Install build dependencies
+
     apt-get install git build-essential fakeroot devscripts libnl-3-dev libnl-genl-3-dev
 
 As this utility talks to the switch driver in the kernel, kernel headers need to be in
@@ -18,6 +19,7 @@ If this file is missing, copy it from here and save to /usr/include/linux/ on th
 https://github.com/openwrt-mirror/openwrt/blob/master/target/linux/generic/files/include/uapi/linux/switch.h
 
 After all the above is done, clone the repo:
+
     git clone https://github.com/jekader/swconfig.git
     cd swconfig
     bash build.sh
