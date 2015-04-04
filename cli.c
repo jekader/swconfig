@@ -23,7 +23,8 @@
 #include <getopt.h>
 #include <sys/types.h>
 #include <sys/socket.h>
-#include <uci.h>
+//#include <uci.h>
+#include <stdbool.h>
 
 #include <linux/types.h>
 #include <linux/netlink.h>
@@ -174,7 +175,7 @@ print_usage(void)
 }
 
 static void
-swconfig_load_uci(struct switch_dev *dev, const char *name)
+/* swconfig_load_uci(struct switch_dev *dev, const char *name)
 {
 	struct uci_context *ctx;
 	struct uci_package *p = NULL;
@@ -198,6 +199,7 @@ out:
 	uci_free_context(ctx);
 	exit(ret);
 }
+*/
 
 int main(int argc, char **argv)
 {
@@ -323,9 +325,9 @@ int main(int argc, char **argv)
 		print_attr_val(a, &val);
 		putchar('\n');
 		break;
-	case CMD_LOAD:
+/*	case CMD_LOAD:
 		swconfig_load_uci(dev, ckey);
-		break;
+		break; */
 	case CMD_HELP:
 		list_attributes(dev);
 		break;

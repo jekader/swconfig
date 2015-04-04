@@ -1,8 +1,7 @@
 ifndef CFLAGS
-CFLAGS = -O2 -g -I ../src
+CFLAGS = -O2 -g -I /usr/include/libnl3/
 endif
-LIBS=-lnl -lnl-genl
-
+LIBS=-lnl-3 -lnl-genl-3
 all: swconfig
 
 %.o: %.c
