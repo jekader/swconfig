@@ -174,8 +174,8 @@ print_usage(void)
 	exit(1);
 }
 
-static void
-/* swconfig_load_uci(struct switch_dev *dev, const char *name)
+/*static void
+swconfig_load_uci(struct switch_dev *dev, const char *name)
 {
 	struct uci_context *ctx;
 	struct uci_package *p = NULL;

@@ -7,5 +7,5 @@ all: swconfig
 %.o: %.c
 	$(CC) $(CFLAGS) -c -o $@ $^
 
-swconfig: cli.o swlib.o uci.o
+swconfig: cli.o swlib.o
 	$(CC) $(LDFLAGS) -o $@ $^ $(LIBS)
