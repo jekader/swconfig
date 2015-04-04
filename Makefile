@@ -14,4 +14,4 @@ clean:
 	rm -f *~ *.o swconfig
 
 install:
-	install -D swconfig $(DESTDIR)$(BINDIR)/swconfig
+	install -D swconfig $(DESTDIR)$(PREFIX)/sbin/swconfig
