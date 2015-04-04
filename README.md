@@ -10,7 +10,7 @@ BUILD:
 
 Install build dependencies
 
-    apt-get install git build-essential fakeroot devscripts libnl-3-dev libnl-genl-3-dev
+    apt-get install git build-essential fakeroot devscripts debhelper libnl-3-dev libnl-genl-3-dev
 
 As this utility talks to the switch driver in the kernel, kernel headers need to be in
 place and "switch.h" must be present otherwise the build will fail.
