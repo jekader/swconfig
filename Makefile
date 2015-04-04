@@ -9,3 +9,9 @@ all: swconfig
 
 swconfig: cli.o swlib.o
 	$(CC) $(LDFLAGS) -o $@ $^ $(LIBS)
+
+clean:
+	rm -f *~ *.o swconfig
+
+install:
+	install -D swconfig $(DESTDIR)$(BINDIR)/swconfig

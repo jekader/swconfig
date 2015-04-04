@@ -1,0 +1,11 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: swconfig
+Upstream-Contact: Jouni Malinen <j@w1.fi>
+Source: http://wiki.openwrt.org/doc/techref/swconfig
+
+Files: *
+Copyright: 2015 OpenWRT Project
+License: GPL-2
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.

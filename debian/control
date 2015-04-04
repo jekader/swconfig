@@ -1,0 +1,11 @@
+Source: swconfig
+Maintainer: Evgheni Dereveanchin <jekader@gmail.com>
+Section: network
+Priority: optional
+Standards-Version: 3.9.6
+Build-Depends: debhelper (>= 9), libnl-3-dev, libnl-genl-3-dev
+
+Package: swconfig
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Utility to configure configurable Ethernet network switches
